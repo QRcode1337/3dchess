@@ -2,6 +2,9 @@
 node_modules/
 .pnpm-debug.log*
 
+# Global packages moved by pnpm
+node_modules/.ignored/
+
 # Next.js
 .next/
 out/

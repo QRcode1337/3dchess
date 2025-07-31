@@ -1,7 +1,10 @@
-"use client"
+import ChessGame from "@/components/chess-game"
 
-import ChessGame from "../chess-3d/components/chess-game"
-
-export default function SyntheticV0PageForDeployment() {
-  return <ChessGame />
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <ChessGame />
+    </main>
+  )
 }
+

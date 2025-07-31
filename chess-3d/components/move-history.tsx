@@ -96,4 +96,3 @@ function formatMove(move: Move | null): string {
 
   return notation
 }
-

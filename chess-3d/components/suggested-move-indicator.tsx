@@ -44,4 +44,3 @@ export default function SuggestedMoveIndicator({ position, type }: SuggestedMove
     </group>
   )
 }
-

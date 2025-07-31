@@ -6,7 +6,7 @@ A 3D chess game built with Next.js, React, Three.js, and TypeScript.
 
 The main project is located in the `chess-3d/` directory.
 
-```bash
+\`\`\`bash
 # Navigate to the project directory
 cd chess-3d
 
@@ -21,11 +21,11 @@ pnpm build
 
 # Start production server
 pnpm start
-```
+\`\`\`
 
 ## 📁 Project Structure
 
-```text
+\`\`\`text
 3dchess/
 ├── chess-3d/           # Main Next.js application
 │   ├── app/           # Next.js 13+ app directory
@@ -35,7 +35,7 @@ pnpm start
 │   ├── types/        # TypeScript type definitions
 │   └── package.json  # Project dependencies
 └── README.md         # This file
-```
+\`\`\`
 
 ## 🔧 Recent Updates
 
@@ -58,9 +58,9 @@ For detailed information about the dependabot fixes, see `chess-3d/README-DEPEND
 
 Make sure you're in the `chess-3d/` directory when running any npm/pnpm commands:
 
-```bash
+\`\`\`bash
 cd chess-3d
 pnpm dev    # Start development server
-```
+\`\`\`
 
 The application will be available at `http://localhost:3000`.

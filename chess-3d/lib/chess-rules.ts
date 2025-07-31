@@ -872,4 +872,3 @@ export function minimax(
 
   return bestMove
 }
-

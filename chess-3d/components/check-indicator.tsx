@@ -38,4 +38,3 @@ export default function CheckIndicator({ position }: CheckIndicatorProps) {
     </group>
   )
 }
-

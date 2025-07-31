@@ -39,4 +39,3 @@ export function initializeChessBoard(): GameState {
 
   return board
 }
-

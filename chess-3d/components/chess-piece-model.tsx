@@ -155,4 +155,3 @@ function renderPieceGeometry(pieceType: string, material: THREE.Material) {
       )
   }
 }
-

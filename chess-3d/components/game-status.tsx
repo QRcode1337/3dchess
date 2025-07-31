@@ -61,4 +61,3 @@ export default function GameStatus({ status, isWhiteTurn, isThinking = false }: 
     </Alert>
   )
 }
-

@@ -8,7 +8,7 @@ This document outlines all the fixes applied to resolve dependabot security issu
 
 ### 1. **Code Issues Fixed**
 - ❌ **Original problematic code:**
-  ```javascript
+  \`\`\`javascript
   var three = require('three')
   function build_blank(n) {
       var ret = "rgb("
@@ -21,7 +21,7 @@ This document outlines all the fixes applied to resolve dependabot security issu
   var time = Date.now();
   new Color(build_blank(50000)) var time_cost = Date.now() - time;
   console.log(time_cost + " ms")
-  ```
+  \`\`\`
 
 - ✅ **Fixed implementation:**
   - Replaced CommonJS `require()` with ES modules `import`
@@ -33,7 +33,7 @@ This document outlines all the fixes applied to resolve dependabot security issu
 ### 2. **Package.json Dependencies Fixed**
 
 #### Before:
-```json
+\`\`\`json
 {
   "three": "latest",
   "expo": "latest",
@@ -44,17 +44,17 @@ This document outlines all the fixes applied to resolve dependabot security issu
   "@react-three/fiber": "latest",
   "@react-three/drei": "latest"
 }
-```
+\`\`\`
 
 #### After:
-```json
+\`\`\`json
 {
   "three": "^0.170.0",
   "@react-three/fiber": "^9.0.0",
   "@react-three/drei": "^10.0.0",
   "@types/three": "^0.170.0"
 }
-```
+\`\`\`
 
 ### 3. **Security Vulnerabilities Resolved**
 - ✅ Removed unnecessary Expo dependencies that contained security vulnerabilities
@@ -89,19 +89,19 @@ The optimized color performance test shows significant improvements:
 ## Build Verification
 
 ✅ **Project now builds successfully:**
-```bash
+\`\`\`bash
 pnpm build
 # ✓ Compiled successfully in 3.0s
 # Route (app)                Size     First Load JS
 # ┌ ○ /                     270 kB    372 kB
 # └ ○ /_not-found           975 B     102 kB
-```
+\`\`\`
 
 ✅ **Security audit passes:**
-```bash
+\`\`\`bash
 pnpm audit
 # No known vulnerabilities found
-```
+\`\`\`
 
 ## Best Practices Implemented
 
@@ -121,12 +121,12 @@ pnpm audit
 
 ## Usage Example
 
-```typescript
+\`\`\`typescript
 // Import the fixed color performance test
 import { benchmarkColorCreation } from "@/lib/color-performance-test"
 
 // Run the benchmark
 benchmarkColorCreation()
-```
+\`\`\`
 
 This will output performance metrics for different color creation approaches, demonstrating the improvements made.

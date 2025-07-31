@@ -39,4 +39,3 @@ export interface RookMove {
   from: Position
   to: Position
 }
-
